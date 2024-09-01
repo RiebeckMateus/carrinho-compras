@@ -15,8 +15,11 @@ function adicionar() {
     let item = document.createElement('span');
     
     item.innerHTML = `<span class="texto-azul">${quantidade}x</span> ${produto} <span class="texto-azul">R$${precoFinal}</span>`;
-    carrinho.appendChild(quebraDeLinha);
+    if (carrinho.children.length >0) {
+        carrinho.appendChild(quebraDeLinha);
+    }
     carrinho.appendChild(item);
+    document.getElementById('quantidade').value = '';
 
     let total = document.getElementById('valor-total').innerHTML.replace('R$', '');
     if (total==='') {
