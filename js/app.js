@@ -4,7 +4,7 @@ function adicionar() {
     let quantidade = document.getElementById('quantidade').value;
 
     if (quantidade==='') {
-        quantidade = 1;
+        return alert('Não foi informado uma quantidade de produtos valida!\nFavor informar corretamente')
     }
 
     let precoFinal = parseFloat(precoUnitario) * parseInt(quantidade);
