@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulário desafio</h1>
+        <form id="form-simples">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Idade:</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="country">País:</label>
+            <input type="text" id="country" name="country" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="output"></div>
+        <div id="campo-textContent">Nada Preenchido</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
